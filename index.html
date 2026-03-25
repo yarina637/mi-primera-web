@@ -2,43 +2,46 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Base de Datos Simulada</title>
+    <title>Portal Deportivo Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="tarjeta" style="max-width: 600px;">
-        <h1>Gestión de Usuarios</h1>
-        <p>Esta tabla simula información "alimentada" desde una base de datos.</p>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Usuario</th>
-                    <th>Correo</th>
-                    <th>Estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Juan Perez</td>
-                    <td>juan@web.com</td>
-                    <td><span class="status active">Activo</span></td>
-                </tr>
-                <tr>
-                    <td>Maria Lopez</td>
-                    <td>maria@web.com</td>
-                    <td><span class="status pending">Pendiente</span></td>
-                </tr>
-                <tr>
-                    <td>Carlos Ruiz</td>
-                    <td>carlos@web.com</td>
-                    <td><span class="status active">Activo</span></td>
-                </tr>
-            </tbody>
-        </table>
+    <header class="header-deportivo">
+        <h1>Centro de Entrenamiento Deportivo</h1>
+        <p>Resultados y Programación en Tiempo Real</p>
+    </header>
 
-        <a href="#" class="boton">Actualizar Datos</a>
+    <div class="contenedor-deportes">
+        <!-- Tarjeta de Próximo Partido -->
+        <div class="tarjeta-evento">
+            <h3>⚽ Fútbol Masculino</h3>
+            <p><strong>Próximo Encuentro:</strong> Sábado 15:00 PM</p>
+            <p>Sede: Polideportivo Municipal</p>
+            <span style="color: var(--primario); font-weight: bold;">Estado: Confirmado</span>
+        </div>
+
+        <!-- Tabla de Posiciones Simulada -->
+        <div class="tarjeta-evento">
+            <h3>🏆 Tabla de Posiciones</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #eee;">
+                    <th>Equipo</th>
+                    <th>PJ</th>
+                    <th>Pts</th>
+                </tr>
+                <tr>
+                    <td>Club A</td>
+                    <td>5</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Club B</td>
+                    <td>5</td>
+                    <td>10</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 </body>
