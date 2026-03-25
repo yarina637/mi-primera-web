@@ -2,18 +2,43 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Panel de Práctica</title>
-    <!-- Aquí conectamos el archivo CSS -->
+    <title>Base de Datos Simulada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="tarjeta">
-        <h1>Panel de Control Web</h1>
-        <p>Has logrado separar el contenido del diseño con éxito.<br>
-        Este es el primer paso para crear sistemas modernos.</p>
+    <div class="tarjeta" style="max-width: 600px;">
+        <h1>Gestión de Usuarios</h1>
+        <p>Esta tabla simula información "alimentada" desde una base de datos.</p>
         
-        <a href="#" class="boton">¡Hacer clic aquí!</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Perez</td>
+                    <td>juan@web.com</td>
+                    <td><span class="status active">Activo</span></td>
+                </tr>
+                <tr>
+                    <td>Maria Lopez</td>
+                    <td>maria@web.com</td>
+                    <td><span class="status pending">Pendiente</span></td>
+                </tr>
+                <tr>
+                    <td>Carlos Ruiz</td>
+                    <td>carlos@web.com</td>
+                    <td><span class="status active">Activo</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="#" class="boton">Actualizar Datos</a>
     </div>
 
 </body>

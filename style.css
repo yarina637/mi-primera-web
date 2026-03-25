@@ -40,26 +40,39 @@ p { color: #666; font-size: 1.1em; line-height: 1.5; }
     transform: scale(1.05);
     background-color: #4facfe;
 }
-2. El "Cuerpo" de la Página: index.html
-Ahora, actualiza tu archivo index.html con este código. Fíjate en la línea que dice <link..., es la que "llama" al archivo CSS que acabas de crear.
+/* Estilos para la Tabla de Datos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-HTML
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Mi Panel Profesional</title>
-    <!-- Esta línea conecta el diseño con el contenido -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
 
-    <div class="tarjeta">
-        <h1>¡Diseño Activado! 🚀</h1>
-        <p>Ahora mi página web tiene "estilo". He separado el contenido del diseño usando un archivo CSS externo.</p>
-        
-        <a href="#" class="boton">Siguiente Nivel</a>
-    </div>
+th {
+    background-color: #4facfe;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
 
-</body>
-</html>
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.active { background-color: #e8f5e9; color: #2e7d32; }
+.pending { background-color: #fff3e0; color: #ef6c00; }
