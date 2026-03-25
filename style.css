@@ -1,0 +1,65 @@
+/* Estilos generales para el fondo */
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* La tarjeta blanca donde vive la información */
+.tarjeta {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 400px;
+    border-top: 8px solid #4facfe;
+}
+
+h1 { color: #333; margin-bottom: 10px; }
+p { color: #666; font-size: 1.1em; line-height: 1.5; }
+
+/* Un botón interactivo */
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #00f2fe;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    background-color: #4facfe;
+}
+2. El "Cuerpo" de la Página: index.html
+Ahora, actualiza tu archivo index.html con este código. Fíjate en la línea que dice <link..., es la que "llama" al archivo CSS que acabas de crear.
+
+HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Panel Profesional</title>
+    <!-- Esta línea conecta el diseño con el contenido -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tarjeta">
+        <h1>¡Diseño Activado! 🚀</h1>
+        <p>Ahora mi página web tiene "estilo". He separado el contenido del diseño usando un archivo CSS externo.</p>
+        
+        <a href="#" class="boton">Siguiente Nivel</a>
+    </div>
+
+</body>
+</html>
